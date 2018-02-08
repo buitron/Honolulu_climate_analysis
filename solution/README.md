@@ -416,7 +416,8 @@ stations_df
   </table>
 </div>
 
-
+</br>
+</br>
 
 # Step 2: Testing and Applying Null Value Replacement Methods
 
@@ -749,6 +750,9 @@ measurements_df.groupby('station')['prcp'].hist(figsize=(10,4), bins=20)
 
 The distribution didn't alter much after imputing values. It looks good to me, lets export it.
 
+</br>
+</br>
+
 # Step 3: Export Clean Data
 
 
@@ -758,6 +762,7 @@ measurements_df.to_csv('../resources/clean_hawaii_measurements.csv', index=False
 </br>
 </br>
 <hr>
+
 # Migrating CSV Data into a Relational Database
 
 # Step 1: Import CSV Data into Pandas Dataframes
@@ -973,7 +978,8 @@ stations_df.dtypes
     elevation    float64
     dtype: object
 
-
+</br>
+</br>
 
 # Step 2: Mapping Data and Connecting the Schema
 
@@ -1020,6 +1026,8 @@ class Station(Base):
 ```python
 Base.metadata.create_all()
 ```
+</br>
+</br>
 
 # Step 3: Migrating Dataframe into Schema
 
@@ -1101,6 +1109,7 @@ engine.execute("SELECT * FROM station LIMIT 5").fetchall()
 </br>
 </br>
 <hr>
+
 # Analysis Prep: Reading Data from Relational Database
 
 
@@ -1187,6 +1196,9 @@ Station = Base.classes.station
 ```python
 session = Session(bind=engine)
 ```
+
+</br>
+</br>
 
 # Precipitation Analysis
 
@@ -1351,6 +1363,7 @@ plt.show()
 ## end of struggle section
 <hr>
 </br>
+
 # Station Analysis
 
 
@@ -1420,6 +1433,8 @@ plt.show()
 
 ![png](./_images/output_39_0.png)
 
+</br>
+</br>
 
 # Temperature Analysis
 
@@ -1479,6 +1494,8 @@ plt.show()
 
 ![png](./_images/output_45_0.png)
 
+</br>
+</br>
 
 # Vacation Rain and Temperature Analysis
 
