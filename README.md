@@ -1,7 +1,9 @@
 <!--lint disable no-heading-punctuation-->
 # Surfs Up!
 <!--lint enable no-heading-punctuation-->
-<center><img src='images/surfs-up.jpeg' /></center>
+<div style="text-align: center;">
+    <img src='images/surfs-up.jpeg' />
+</div>
 
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you decided to do some climate analysis on the area. Because you are such an awesome person, you have decided to share your ninja analytical skills with the community by providing a climate analysis api. The following outlines what you need to do.
 
@@ -95,7 +97,9 @@ You are now ready to use Python and SQLAlchemy to do basic climate analysis and 
 
   * Use the peak-to-peak (tmax-tmin) value as the y error bar (yerr).
 
-<center><img src='images/temp_avg.png' height="400px"/></center>
+<div style="text-align: center;">
+    <img src='images/temp_avg.png' height="400px"/>
+</div>
 
 
 ### Optional Recommended Analysis
