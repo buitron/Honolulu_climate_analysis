@@ -243,70 +243,57 @@ measurements_df.describe()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>prcp</th>
-      <th>tobs</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>18103.000000</td>
-      <td>19550.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>0.160644</td>
-      <td>73.097954</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>0.468746</td>
-      <td>4.523527</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>0.000000</td>
-      <td>53.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>0.000000</td>
-      <td>70.000000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>0.010000</td>
-      <td>73.000000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>0.110000</td>
-      <td>76.000000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>11.530000</td>
-      <td>87.000000</td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>prcp</th>
+        <th>tobs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>count</th>
+        <td>18103.000000</td>
+        <td>19550.000000</td>
+      </tr>
+      <tr>
+        <th>mean</th>
+        <td>0.160644</td>
+        <td>73.097954</td>
+      </tr>
+      <tr>
+        <th>std</th>
+        <td>0.468746</td>
+        <td>4.523527</td>
+      </tr>
+      <tr>
+        <th>min</th>
+        <td>0.000000</td>
+        <td>53.000000</td>
+      </tr>
+      <tr>
+        <th>25%</th>
+        <td>0.000000</td>
+        <td>70.000000</td>
+      </tr>
+      <tr>
+        <th>50%</th>
+        <td>0.010000</td>
+        <td>73.000000</td>
+      </tr>
+      <tr>
+        <th>75%</th>
+        <td>0.110000</td>
+        <td>76.000000</td>
+      </tr>
+      <tr>
+        <th>max</th>
+        <td>11.530000</td>
+        <td>87.000000</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 
@@ -341,105 +328,92 @@ stations_df
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>station</th>
-      <th>name</th>
-      <th>latitude</th>
-      <th>longitude</th>
-      <th>elevation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>USC00519397</td>
-      <td>WAIKIKI 717.2, HI US</td>
-      <td>21.27160</td>
-      <td>-157.81680</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>USC00513117</td>
-      <td>KANEOHE 838.1, HI US</td>
-      <td>21.42340</td>
-      <td>-157.80150</td>
-      <td>14.6</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>USC00514830</td>
-      <td>KUALOA RANCH HEADQUARTERS 886.9, HI US</td>
-      <td>21.52130</td>
-      <td>-157.83740</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>USC00517948</td>
-      <td>PEARL CITY, HI US</td>
-      <td>21.39340</td>
-      <td>-157.97510</td>
-      <td>11.9</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>USC00518838</td>
-      <td>UPPER WAHIAWA 874.3, HI US</td>
-      <td>21.49920</td>
-      <td>-158.01110</td>
-      <td>306.6</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>USC00519523</td>
-      <td>WAIMANALO EXPERIMENTAL FARM, HI US</td>
-      <td>21.33556</td>
-      <td>-157.71139</td>
-      <td>19.5</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>USC00519281</td>
-      <td>WAIHEE 837.5, HI US</td>
-      <td>21.45167</td>
-      <td>-157.84889</td>
-      <td>32.9</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>USC00511918</td>
-      <td>HONOLULU OBSERVATORY 702.2, HI US</td>
-      <td>21.31520</td>
-      <td>-157.99920</td>
-      <td>0.9</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>USC00516128</td>
-      <td>MANOA LYON ARBO 785.2, HI US</td>
-      <td>21.33310</td>
-      <td>-157.80250</td>
-      <td>152.4</td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>station</th>
+        <th>name</th>
+        <th>latitude</th>
+        <th>longitude</th>
+        <th>elevation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0</th>
+        <td>USC00519397</td>
+        <td>WAIKIKI 717.2, HI US</td>
+        <td>21.27160</td>
+        <td>-157.81680</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>USC00513117</td>
+        <td>KANEOHE 838.1, HI US</td>
+        <td>21.42340</td>
+        <td>-157.80150</td>
+        <td>14.6</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>USC00514830</td>
+        <td>KUALOA RANCH HEADQUARTERS 886.9, HI US</td>
+        <td>21.52130</td>
+        <td>-157.83740</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>USC00517948</td>
+        <td>PEARL CITY, HI US</td>
+        <td>21.39340</td>
+        <td>-157.97510</td>
+        <td>11.9</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>USC00518838</td>
+        <td>UPPER WAHIAWA 874.3, HI US</td>
+        <td>21.49920</td>
+        <td>-158.01110</td>
+        <td>306.6</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>USC00519523</td>
+        <td>WAIMANALO EXPERIMENTAL FARM, HI US</td>
+        <td>21.33556</td>
+        <td>-157.71139</td>
+        <td>19.5</td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td>USC00519281</td>
+        <td>WAIHEE 837.5, HI US</td>
+        <td>21.45167</td>
+        <td>-157.84889</td>
+        <td>32.9</td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td>USC00511918</td>
+        <td>HONOLULU OBSERVATORY 702.2, HI US</td>
+        <td>21.31520</td>
+        <td>-157.99920</td>
+        <td>0.9</td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td>USC00516128</td>
+        <td>MANOA LYON ARBO 785.2, HI US</td>
+        <td>21.33310</td>
+        <td>-157.80250</td>
+        <td>152.4</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 
@@ -460,91 +434,78 @@ climate_df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>station</th>
-      <th>date</th>
-      <th>prcp</th>
-      <th>tobs</th>
-      <th>name</th>
-      <th>latitude</th>
-      <th>longitude</th>
-      <th>elevation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>USC00519397</td>
-      <td>2010-01-01</td>
-      <td>0.08</td>
-      <td>65</td>
-      <td>WAIKIKI 717.2, HI US</td>
-      <td>21.2716</td>
-      <td>-157.8168</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>USC00519397</td>
-      <td>2010-01-02</td>
-      <td>0.00</td>
-      <td>63</td>
-      <td>WAIKIKI 717.2, HI US</td>
-      <td>21.2716</td>
-      <td>-157.8168</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>USC00519397</td>
-      <td>2010-01-03</td>
-      <td>0.00</td>
-      <td>74</td>
-      <td>WAIKIKI 717.2, HI US</td>
-      <td>21.2716</td>
-      <td>-157.8168</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>USC00519397</td>
-      <td>2010-01-04</td>
-      <td>0.00</td>
-      <td>76</td>
-      <td>WAIKIKI 717.2, HI US</td>
-      <td>21.2716</td>
-      <td>-157.8168</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>USC00519397</td>
-      <td>2010-01-06</td>
-      <td>NaN</td>
-      <td>73</td>
-      <td>WAIKIKI 717.2, HI US</td>
-      <td>21.2716</td>
-      <td>-157.8168</td>
-      <td>3.0</td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>station</th>
+        <th>date</th>
+        <th>prcp</th>
+        <th>tobs</th>
+        <th>name</th>
+        <th>latitude</th>
+        <th>longitude</th>
+        <th>elevation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0</th>
+        <td>USC00519397</td>
+        <td>2010-01-01</td>
+        <td>0.08</td>
+        <td>65</td>
+        <td>WAIKIKI 717.2, HI US</td>
+        <td>21.2716</td>
+        <td>-157.8168</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>USC00519397</td>
+        <td>2010-01-02</td>
+        <td>0.00</td>
+        <td>63</td>
+        <td>WAIKIKI 717.2, HI US</td>
+        <td>21.2716</td>
+        <td>-157.8168</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>USC00519397</td>
+        <td>2010-01-03</td>
+        <td>0.00</td>
+        <td>74</td>
+        <td>WAIKIKI 717.2, HI US</td>
+        <td>21.2716</td>
+        <td>-157.8168</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>USC00519397</td>
+        <td>2010-01-04</td>
+        <td>0.00</td>
+        <td>76</td>
+        <td>WAIKIKI 717.2, HI US</td>
+        <td>21.2716</td>
+        <td>-157.8168</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>USC00519397</td>
+        <td>2010-01-06</td>
+        <td>NaN</td>
+        <td>73</td>
+        <td>WAIKIKI 717.2, HI US</td>
+        <td>21.2716</td>
+        <td>-157.8168</td>
+        <td>3.0</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 
@@ -661,80 +622,67 @@ measurements_df.groupby('station').median()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>prcp</th>
-      <th>tobs</th>
-    </tr>
-    <tr>
-      <th>station</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>USC00511918</th>
-      <td>0.00</td>
-      <td>72</td>
-    </tr>
-    <tr>
-      <th>USC00513117</th>
-      <td>0.02</td>
-      <td>73</td>
-    </tr>
-    <tr>
-      <th>USC00514830</th>
-      <td>0.02</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <th>USC00516128</th>
-      <td>0.16</td>
-      <td>71</td>
-    </tr>
-    <tr>
-      <th>USC00517948</th>
-      <td>0.00</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <th>USC00518838</th>
-      <td>0.03</td>
-      <td>73</td>
-    </tr>
-    <tr>
-      <th>USC00519281</th>
-      <td>0.04</td>
-      <td>72</td>
-    </tr>
-    <tr>
-      <th>USC00519397</th>
-      <td>0.00</td>
-      <td>76</td>
-    </tr>
-    <tr>
-      <th>USC00519523</th>
-      <td>0.00</td>
-      <td>75</td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>prcp</th>
+        <th>tobs</th>
+      </tr>
+      <tr>
+        <th>station</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>USC00511918</th>
+        <td>0.00</td>
+        <td>72</td>
+      </tr>
+      <tr>
+        <th>USC00513117</th>
+        <td>0.02</td>
+        <td>73</td>
+      </tr>
+      <tr>
+        <th>USC00514830</th>
+        <td>0.02</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <th>USC00516128</th>
+        <td>0.16</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <th>USC00517948</th>
+        <td>0.00</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <th>USC00518838</th>
+        <td>0.03</td>
+        <td>73</td>
+      </tr>
+      <tr>
+        <th>USC00519281</th>
+        <td>0.04</td>
+        <td>72</td>
+      </tr>
+      <tr>
+        <th>USC00519397</th>
+        <td>0.00</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <th>USC00519523</th>
+        <td>0.00</td>
+        <td>75</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 
@@ -835,67 +783,54 @@ measurments_df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>station</th>
-      <th>date</th>
-      <th>prcp</th>
-      <th>tobs</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>USC00519397</td>
-      <td>2010-01-01</td>
-      <td>0.08</td>
-      <td>65</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>USC00519397</td>
-      <td>2010-01-02</td>
-      <td>0.00</td>
-      <td>63</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>USC00519397</td>
-      <td>2010-01-03</td>
-      <td>0.00</td>
-      <td>74</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>USC00519397</td>
-      <td>2010-01-04</td>
-      <td>0.00</td>
-      <td>76</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>USC00519397</td>
-      <td>2010-01-06</td>
-      <td>0.00</td>
-      <td>73</td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>station</th>
+        <th>date</th>
+        <th>prcp</th>
+        <th>tobs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0</th>
+        <td>USC00519397</td>
+        <td>2010-01-01</td>
+        <td>0.08</td>
+        <td>65</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>USC00519397</td>
+        <td>2010-01-02</td>
+        <td>0.00</td>
+        <td>63</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>USC00519397</td>
+        <td>2010-01-03</td>
+        <td>0.00</td>
+        <td>74</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>USC00519397</td>
+        <td>2010-01-04</td>
+        <td>0.00</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>USC00519397</td>
+        <td>2010-01-06</td>
+        <td>0.00</td>
+        <td>73</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 
@@ -948,73 +883,60 @@ stations_df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>station</th>
-      <th>name</th>
-      <th>latitude</th>
-      <th>longitude</th>
-      <th>elevation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>USC00519397</td>
-      <td>WAIKIKI 717.2, HI US</td>
-      <td>21.2716</td>
-      <td>-157.8168</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>USC00513117</td>
-      <td>KANEOHE 838.1, HI US</td>
-      <td>21.4234</td>
-      <td>-157.8015</td>
-      <td>14.6</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>USC00514830</td>
-      <td>KUALOA RANCH HEADQUARTERS 886.9, HI US</td>
-      <td>21.5213</td>
-      <td>-157.8374</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>USC00517948</td>
-      <td>PEARL CITY, HI US</td>
-      <td>21.3934</td>
-      <td>-157.9751</td>
-      <td>11.9</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>USC00518838</td>
-      <td>UPPER WAHIAWA 874.3, HI US</td>
-      <td>21.4992</td>
-      <td>-158.0111</td>
-      <td>306.6</td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>station</th>
+        <th>name</th>
+        <th>latitude</th>
+        <th>longitude</th>
+        <th>elevation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0</th>
+        <td>USC00519397</td>
+        <td>WAIKIKI 717.2, HI US</td>
+        <td>21.2716</td>
+        <td>-157.8168</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>USC00513117</td>
+        <td>KANEOHE 838.1, HI US</td>
+        <td>21.4234</td>
+        <td>-157.8015</td>
+        <td>14.6</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>USC00514830</td>
+        <td>KUALOA RANCH HEADQUARTERS 886.9, HI US</td>
+        <td>21.5213</td>
+        <td>-157.8374</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>USC00517948</td>
+        <td>PEARL CITY, HI US</td>
+        <td>21.3934</td>
+        <td>-157.9751</td>
+        <td>11.9</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>USC00518838</td>
+        <td>UPPER WAHIAWA 874.3, HI US</td>
+        <td>21.4992</td>
+        <td>-158.0111</td>
+        <td>306.6</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 
@@ -1300,53 +1222,40 @@ prec_df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>precipitation</th>
-    </tr>
-    <tr>
-      <th>date</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2016-08-01</th>
-      <td>0.08</td>
-    </tr>
-    <tr>
-      <th>2016-08-02</th>
-      <td>0.05</td>
-    </tr>
-    <tr>
-      <th>2016-08-03</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>2016-08-04</th>
-      <td>0.04</td>
-    </tr>
-    <tr>
-      <th>2016-08-05</th>
-      <td>0.01</td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>precipitation</th>
+      </tr>
+      <tr>
+        <th>date</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>2016-08-01</th>
+        <td>0.08</td>
+      </tr>
+      <tr>
+        <th>2016-08-02</th>
+        <td>0.05</td>
+      </tr>
+      <tr>
+        <th>2016-08-03</th>
+        <td>0.00</td>
+      </tr>
+      <tr>
+        <th>2016-08-04</th>
+        <td>0.04</td>
+      </tr>
+      <tr>
+        <th>2016-08-05</th>
+        <td>0.01</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 </br>
