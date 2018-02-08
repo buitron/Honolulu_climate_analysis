@@ -1573,3 +1573,23 @@ plt.show()
 ```python
 plt.close('all')
 ```
+
+<hr>
+<hr>
+
+# Viewing the Flask API App
+## How to execute the flask python app contained in the flask directory
+Dependencies: Install the modules using these commands
+```bash
+pip install pandas
+pip install numpy
+pip install sqlalchemy
+pip install flask
+```
+
+Then navigate to the location in your system where the flask app is contained `flask/app.py` and execute the script using the  following command:
+```bash
+python app.py
+```
+from there open up a browser and type `localhost:5000` into the url bar and the page should populate. Enjoy!
+
