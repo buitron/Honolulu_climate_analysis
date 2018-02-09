@@ -1271,97 +1271,18 @@ prec_df.head()
 </div>
 
 </br>
-<hr>
-
-## HELP! - This is the last section that needs work before the project is complete
-
-#### bar plot using the dataframe with one index, in date date-type %Y-%m-%d,  and one column of values
 
 
 ```python
-print(f"Max Precipitation: {prec_df.precipitation.max()}, Min Precipitation: {prec_df.precipitation.min()}")
-```
-
-    Max Precipitation: 6.7, Min Precipitation: 0.0
-
-
-
-```python
-len(prec_df)
-```
-
-
-
-
-    2372
-
-
-
-
-```python
-prec_df[:40].plot.bar(figsize=(15,4), rot=30, color='teal')
-plt.legend(loc=2)
+prec_df.plot(figsize=(20,6), rot=30, color='teal', x_compat=True, fontsize=12)
+plt.legend(loc=1, prop={'size': 14})
 plt.show()
 ```
 
 
-![png](./_images/output_21_0.png)
+![png](./_images/output_19_0.png)
 
-
-
-```python
-# import datetime
-```
-
-
-```python
-# base = datetime.datetime(2016, 8, 1)
-# arr = np.array([base + datetime.timedelta(months=i) for i in xrange(12)])
-# arr
-```
-
-
-```python
-# dates = np.array(['2016-08-01','2016-09-01','2016-10-01','2016-11-01','2016-12-01','2017-01-01','2017-02-01','2017-03-01',
-#          '2017-04-01','2017-05-01','2017-06-01','2017-07-01','2017-08-01'], dtype='datetime64')
-```
-
-#### same bar plot, removing all the text in the xaxis
-
-
-```python
-# df.plot.bar(yticks=np.arange(0,5), ylim=((0,4)))
-# ax1 = plt.axes()
-# x_axis = ax1.axes.get_xaxis()
-# x_axis.set_visible(False)
-
-# plt.show()
-
-```
-
-#### plt monthly
-
-
-```python
-# import datetime
-# from dateutil.rrule import rrule, MONTHLY
-```
-
-
-```python
-# d1 = datetime.date(2016,8,1)
-# d2 = datetime.date(2017,8,31)
-
-# dates = [dt.strftime('%Y-%m-%d') for dt in rrule(MONTHLY, dtstart=d1, until=d2)]
-# dates
-```
-
-
-```python
-# plt.close('all')
-```
-## end of struggle section
-<hr>
+</br>
 </br>
 
 # Station Analysis
@@ -1412,6 +1333,7 @@ last_12_mo = session.query(Measurement.station, Measurement.tobs, Measurement.da
 largest_count = pd.DataFrame(last_12_mo)[['station','tobs']].groupby('station').count().sort_values('tobs', ascending=False)[:1].index.item()
 ```
 
+#### Retrieving the Station with the largest amount of data
 
 ```python
 largest_station = session.query(Measurement.tobs, Measurement.date).filter(Measurement.date >= '2016-08-01', Measurement.date <= '2017-08-31', Measurement.station == largest_count).all()
